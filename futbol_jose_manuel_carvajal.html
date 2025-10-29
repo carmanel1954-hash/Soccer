@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fútbol — Una pasión universal</title>
+  <style>
+    :root{--accent:#0b75b7;--muted:#666;--bg:#f7f9fb}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:#111; background:var(--bg); line-height:1.6}
+    header{background:linear-gradient(90deg, #083d6b 0%, var(--accent) 100%); color:#fff; padding:40px 20px}
+    .container{max-width:1000px;margin:0 auto;padding:24px}
+    h1{margin:0;font-size:2rem}
+    p.lead{margin-top:12px;color:rgba(255,255,255,0.95);font-size:1.05rem}
+    main{padding:32px 20px}
+    .grid{display:grid;grid-template-columns:1fr;gap:24px}
+    @media(min-width:800px){.grid{grid-template-columns:2fr 1fr}}
+    .card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 6px 18px rgba(12,30,50,0.06)}
+    h2{margin-top:0}
+    ul{padding-left:1.1rem}
+    .meta{color:var(--muted);font-size:0.95rem}
+    .stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .stat{background:#f1f6fa;padding:8px 12px;border-radius:999px;font-weight:600}
+    .footer{background:#0b2340;color:#dbeeff;padding:18px 20px;margin-top:32px}
+    footer .container{display:flex;flex-direction:column;align-items:center;gap:8px}
+    footer a{color:#eaf6ff;text-decoration:none}
+    .creator{font-weight:700}
+    nav{display:flex;gap:12px;margin-top:12px}
+    nav a{color:#dbeeff;text-decoration:none;padding:8px 12px;border-radius:8px;background:rgba(255,255,255,0.05)}
+    .hero-img{margin-top:18px;border-radius:10px;overflow:hidden}
+    .hero-img img{width:100%;height:auto;display:block}
+    .small{font-size:0.95rem;color:var(--muted)}
+    .socials{display:flex;gap:12px;margin-top:12px}
+    .socials a{background:#eaf6ff;padding:8px 10px;border-radius:8px;text-decoration:none;color:#083d6b;font-weight:600}
+    .download-btn{display:inline-block;margin-top:14px;padding:10px 14px;background:#083d6b;color:white;border-radius:8px;text-decoration:none}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Fútbol — Una pasión universal</h1>
+      <p class="lead">Historia, reglas básicas y por qué mueve emociones en todo el mundo.</p>
+      <nav>
+        <a href="#historia">Historia</a>
+        <a href="#reglas">Reglas</a>
+        <a href="#jugadores">Jugadores</a>
+        <a href="#practica">Cómo practicar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container grid">
+      <section class="card">
+        <h2 id="historia">Breve historia</h2>
+        <p class="small">El fútbol moderno surgió en Inglaterra en el siglo XIX, consolidándose con reglas escritas que permitieron su expansión internacional. Desde entonces se ha convertido en el deporte más practicado y seguido del planeta.</p>
+        <div class="hero-img">
+          <!-- Imagen de ejemplo: si deseas reemplazarla, guarda una imagen en la misma carpeta y cambia el src -->
+          <img src="https://images.unsplash.com/photo-1506224773991-0f0b7d7a6c3b?auto=format&fit=crop&w=1200&q=80" alt="Imagen representativa del fútbol">
+        </div>
+
+        <h3>Hitos clave</h3>
+        <ul>
+          <li>Creación de las reglas estándar a mediados del siglo XIX.</li>
+          <li>Fundación de la FIFA en 1904.</li>
+          <li>Primer Mundial de la FIFA en 1930 en Uruguay.</li>
+        </ul>
+      </section>
+
+      <aside class="card">
+        <h3>Datos rápidos</h3>
+        <p class="meta">Lo esencial en pocas líneas</p>
+        <div class="stats">
+          <div class="stat">11 jugadores</div>
+          <div class="stat">2 tiempos de 45 min</div>
+          <div class="stat">1 balón</div>
+        </div>
+
+        <h3 style="margin-top:18px">Competiciones famosas</h3>
+        <ul>
+          <li>FIFA World Cup</li>
+          <li>UEFA Champions League</li>
+          <li>Copas nacionales (ej. Copa Colombia, Copa Libertadores)</li>
+        </ul>
+      </aside>
+
+      <section class="card">
+        <h2 id="reglas">Reglas básicas</h2>
+        <p class="small">El objetivo es marcar más goles que el rival. Algunas reglas elementales son:</p>
+        <ul>
+          <li>No se puede tocar el balón con las manos (salvo el portero dentro del área).</li>
+          <li>El fuera de juego limita ventajas ofensivas ilegales.</li>
+          <li>Faltas y tarjetas para sancionar conductas antideportivas.</li>
+        </ul>
+
+        <h3 id="jugadores">Posiciones destacadas</h3>
+        <ul>
+          <li>Portero — último bastión defensivo.</li>
+          <li>Defensas — protegen la portería.</li>
+          <li>Centrocampistas — conectan defensa y ataque.</li>
+          <li>Delanteros — encargados de la definición.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2 id="practica">Cómo empezar a practicar</h2>
+        <p class="small">Consejos para principiantes</p>
+        <ol>
+          <li>Consigue un balón y un espacio seguro para practicar pases y control.</li>
+          <li>Trabaja en la técnica básica: pase, control, dribbling y remate.</li>
+          <li>Únete a un equipo local o grupos de entrenamiento para mejorar con práctica colectiva.</li>
+        </ol>
+
+        <h3>Beneficios</h3>
+        <p>El fútbol mejora la resistencia cardiovascular, la coordinación, el trabajo en equipo y la disciplina personal.</p>
+      </section>
+
+      <section class="card">
+        <h3>Conéctate con nosotros</h3>
+        <p class="small">Sigue contenidos, noticias y ejemplos de entrenamiento en redes sociales.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener">Twitter/X</a>
+        </div>
+
+        <a class="download-btn" href="#" onclick="window.print();return false;">Imprimir página</a>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>© 2025 — Sitio informativo sobre fútbol</div>
+      <div class="small">Diseñado y creado por <span class="creator">José Manuel Carvajal</span></div>
+      <div><a href="#">Contacto</a> · <a href="#">Términos</a></div>
+    </div>
+  </footer>
+
+</body>
+</html>
